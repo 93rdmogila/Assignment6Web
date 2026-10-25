@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 4. Slide Methods</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- jQuery from CDN -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="task0.html">Task 0</a>
+    <a href="task1.html">Task 1</a>
+    <a href="task2.html">Task 2</a>
+    <a href="task3.html">Task 3</a>
+    <a href="task4.html">Task 4</a>
+    <a href="task5.html">Task 5</a>
+    <a href="task6.html">Task 6</a>
+    <a href="task7.html">Task 7</a>
+    <a href="task8.html">Task 8</a>
+    <a href="task9.html">Task 9</a>
+    <a href="task10.html">Task 10</a>
+    <a href="task11.html">Task 11</a>
+  </div>
+
+  <div class="container">
+    <h1>Task 4. Slide Methods</h1>
+    <div id="panel" class="panel">
+      <p>This is a collapsible panel. It can slide up and down.</p>
+    </div>
+
+    <button id="slideUpBtn">Slide Up</button>
+    <button id="slideDownBtn">Slide Down</button>
+    <button id="slideToggleBtn">Slide Toggle</button>
+  </div>
+
+  <script>
+    $(document).ready(function () {
+
+      $("#slideUpBtn").click(function () {
+        $("#panel").slideUp();
+      });
+
+      $("#slideDownBtn").click(function () {
+        $("#panel").slideDown();
+      });
+
+      $("#slideToggleBtn").click(function () {
+        $("#panel").slideToggle();
+      });
+
+    });
+  </script>
+</body>
+</html>
