@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 5. Add & Remove Elements</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- jQuery from CDN -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="task0.html">Task 0</a>
+    <a href="task1.html">Task 1</a>
+    <a href="task2.html">Task 2</a>
+    <a href="task3.html">Task 3</a>
+    <a href="task4.html">Task 4</a>
+    <a href="task5.html">Task 5</a>
+    <a href="task6.html">Task 6</a>
+    <a href="task7.html">Task 7</a>
+    <a href="task8.html">Task 8</a>
+    <a href="task9.html">Task 9</a>
+    <a href="task10.html">Task 10</a>
+    <a href="task11.html">Task 11</a>
+  </div>
+
+  <div class="container">
+    <h1>Task 5. Add & Remove Elements</h1>
+    <ul id="myList">
+      <li>Item 1</li>
+      <li>Item 2</li>
+    </ul>
+
+    <button id="addEndBtn">Add Item (end)</button>
+    <button id="addStartBtn">Add Item (start)</button>
+    <button id="removeBtn">Remove Item</button>
+  </div>
+
+  <script>
+    $(document).ready(function () {
+
+      // the list already has 2 items
+      var itemNumber = 2;
+
+      // append() adds a new item at the end of the list
+      $("#addEndBtn").click(function () {
+        itemNumber = itemNumber + 1;
+        $("#myList").append("<li>Item " + itemNumber + "</li>");
+      });
+
+      // prepend() adds a new item at the beginning of the list
+      $("#addStartBtn").click(function () {
+        itemNumber = itemNumber + 1;
+        $("#myList").prepend("<li>Item " + itemNumber + "</li>");
+      });
+
+      // remove() deletes the last item of the list
+      $("#removeBtn").click(function () {
+        $("#myList li:last").remove();
+      });
+
+    });
+  </script>
+</body>
+</html>
