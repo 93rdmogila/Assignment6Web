@@ -2,8 +2,8 @@
 
 Course: Web Technologies
 
-Student: Write your full name
-Group: Write your group
+Student: Yerzhanov Amanzhol
+Group: SE-2526
 
 ## Description
 
@@ -49,4 +49,4 @@ An internet connection is needed because jQuery is loaded from the CDN.
 1. Push the files to a GitHub repository (`index.html` must be in the root folder).
 2. Open Settings -> Pages.
 3. In "Branch" choose `main` and the `/ (root)` folder, then press Save.
-4. After a minute the site will be available at `https://<username>.github.io/<repository>/`.
+4. After a minute the site will be available at `https://github.com/93rdmogila/Assignment6Web`.
